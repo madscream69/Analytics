@@ -1,0 +1,40 @@
+.header__top{
+    //test colors
+    background-color: #172755;
+    color: #8794BA;
+}
+@media (max-width:375px) {
+    .header__top-reg{
+        display: none;
+    }
+    .header{
+        &__top{
+            height: 70px;
+        }
+        &__top-wrapper{
+            height: inherit;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__top-list{
+            display: none;//vremenno
+        }
+        &__top-menu{
+            display: block;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            span{
+                background-color: #8794BA;
+                width: 24px;
+                height: 3px;
+                display: block;
+                margin: 5px 0;
+            }
+        }
+        &__logo{
+            max-width: 135px;
+        }
+    }
+}
