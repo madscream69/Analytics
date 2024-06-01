@@ -1,32 +1,81 @@
 .header__top{
     //test colors
-    background-color: #172755;
+    background-color: $background-main;
     color: #8794BA;
 }
 @media (max-width:375px) {
-    .header__top-reg{
+    .header__top-reg {//potom nado dobavit.header__top-log
         display: none;
     }
     .header{
-        &__top{
-            height: 70px;
+        margin-bottom: 50px;
+        position: relative;
+        background-color: $pink;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        
+        &__clip{
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $background-main;
+            clip-path: polygon(0 0, 100% 0, 100% 88%, 0 98%);
         }
-        &__top-wrapper{
+
+        &__top{
+            z-index: 111;
+            height: 70px;
+            -webkit-box-shadow: 0px 6px 8px -3px rgba(#172755,0.75);
+            -moz-box-shadow: 0px 6px 8px -3px rgba(#172755,0.75);
+            box-shadow: 0px 6px 8px -3px rgba(#172755,0.75);
+            margin-bottom: 30px;
+        }
+        &__top-auth{
+            z-index: 10;
+            margin-right: -60px;//
+        }
+        &__top-log{
+            z-index: 10;
+            color: $default;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 19px;
+            
+        }
+        &__top-inner{
             height: inherit;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            padding-top: 19px;
         }
         &__top-list{
-            display: none;//vremenno
+            // display: none;//vremenno
+            display: block;
+        } 
+        &__top-item:not(:last-child){
+            margin-bottom: 15px;
+        } 
+        &__top-link{
+            color: $default;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 18px;
         }
         &__top-menu{
+            z-index: 10;
             display: block;
             background-color: transparent;
             border: none;
             cursor: pointer;
             span{
-                background-color: #8794BA;
+                background-color: $default;
                 width: 24px;
                 height: 3px;
                 display: block;
@@ -35,6 +84,60 @@
         }
         &__logo{
             max-width: 135px;
+            z-index: 10;
+        }
+        &__content{
+            // background-color: $background-main;
+            padding-bottom: 127px;
+            // border-bottom: 17px solid $pink;
+
+            
+        }
+        &__anal{
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 15px;
+            margin-bottom: 26px;
+        }
+        &__info-title{
+            color: #fff;
+            font-weight: 700;
+            font-size: 31px;
+            line-height: 37px;
+
+            margin-bottom: 15px;
+        }
+        &__info-text{
+            line-height: 27px;
+            font-size: 18px;
+
+            margin-bottom: 26px;
+        }
+        &__info-btn{
+            display: block;
+            text-align: center;
+            width: 100%;
+            background-color: $pink;
+            padding: 10px 80px 10px 80px;
+            border-radius: 30px;
+            color: #fff;
+        }
+    }
+    .menu{
+        // display: none;
+        
+        width: 100%;
+        order: 4;
+        background-color: $background-main;
+        position: relative;
+        padding: 25px 0;
+        text-align: center;
+        z-index: 1;
+
+        transform: translateY(-300px);
+        transition: all .5s;
+        &--open{
+            transform: translateY(20px);
         }
     }
 }

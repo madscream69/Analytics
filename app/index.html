@@ -4,29 +4,36 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gulp bimba</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Analitycs</title>
 </head>
-<header>
+<header class="header">
+    
     <div class="header__top">
         <div class="container">
-            <div class="header__top-wrapper">
+            <div class="header__top-inner">
                 <div class="header__logo">
                     <img src="images/header/logo.svg" alt="" class="header__logo-img">
                 </div>
-                <ul class="header__top-list">
-                    <li class="header__top-item">
-                        <a href="#" class="header__top-link">Products</a>
-                    </li>
-                    <li class="header__top-item">
-                        <a href="#" class="header__top-link">Pricing</a>
-                    </li>
-                    <li class="header__top-item">
-                        <a href="#" class="header__top-link">FAQ</a>
-                    </li>
-                    <li class="header__top-item">
-                        <a href="#" class="header__top-link">Blog</a>
-                    </li>
-                </ul>
+                <nav class="menu">
+                    <ul class="header__top-list">
+                        <li class="header__top-item">
+                            <a href="#" class="header__top-link">Products</a>
+                        </li>
+                        <li class="header__top-item">
+                            <a href="#" class="header__top-link">Pricing</a>
+                        </li>
+                        <li class="header__top-item">
+                            <a href="#" class="header__top-link">FAQ</a>
+                        </li>
+                        <li class="header__top-item">
+                            <a href="#" class="header__top-link">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- <div class="header__menu-wrapper"> -->
                 <div class="header__top-auth">
                     <a href="#" class="header__top-log">Sign in</a>
                     <a href="#" class="header__top-reg">Sign Up</a>
@@ -36,11 +43,61 @@
                     <span></span>
                     <span></span>
                 </button>
+                <!-- </div> -->
+                
             </div>
         </div>
     </div>
+    <section class="header__content">
+        <div class="container">
+            <div class="header__anal">
+                <img src="images/header/frame.png" alt="" class="header__content-img">
+            </div>
+            <div class="header__info">
+                <h1 class="header__info-title">Monitor your business on real-time dashboard</h1>
+                <p class="header__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. </p>
+                <a href="#" class="header__info-btn">Try for free</a>
+            </div>
+        </div>
+    </section>
+    <div class="header__clip"></div>
 </header>
-<main><h2>bomba</h2></main>
+<main class="main">
+    <div class="container">
+        <section class="main__features">
+            <h2 class="main__features-title">Main Features</h2>
+            <p class="main__features-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet. Id vel in nam malesuada.</p>
+            <div class="main__info">
+                <div class="main__info-item">
+                    <img src="images/main/Icon-1.svg" alt="icon" class="main__info-img">
+                    <div class="main__info-textbox">
+                        <p class="main__info-title">Monitoring 24/7</p>
+                        <p class="main__info-text">Lorem ipsum dolor sit amet, conse ctetur adipis cing elit. Elementum nisi aliquet volutpat.</p>
+                    </div>
+                    
+                </div>
+                <div class="main__info-item">
+                    <img src="images/main/Icon-2.svg" alt="icon" class="main__info-img">
+                        
+                    <div class="main__info-textbox">
+                        <p class="main__info-title">Widget System</p>
+                        <p class="main__info-text">Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar.</p>
+                    </div>
+                    
+                </div>
+                <div class="main__info-item">
+                    <img src="images/main/Icon-3.svg" alt="icon" class="main__info-img">
+                        
+                    <div class="main__info-textbox">
+                        <p class="main__info-title">Best Performance</p>
+                        <p class="main__info-text">Lorem ipsum dolor sit amet, consectetur adipis cing elit. Elementum nisi aliquet volutpat.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
 <body>
     <h1>Hello footer</h1>
     <script src="js/main.js"></script>
