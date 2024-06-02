@@ -36,3 +36,26 @@
         margin-right: 29px;
     }
 }
+.advantages{
+    margin-bottom: 60px;
+    &__info{
+        margin-bottom: 30px;
+    }
+    &__images{
+        padding: 28px 37px;
+        background-color: #fff;
+        border-radius: 15px;
+    }
+}
+.advantages-title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: $background-main;
+    margin-bottom: 20px;
+}
+.advantages-text{
+    color: $default;
+    font-size: 14px;
+    line-height: 19px;
+}
