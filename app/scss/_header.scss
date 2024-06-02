@@ -1,11 +1,71 @@
-.header__top{
-    //test colors
-    background-color: $background-main;
-    color: #8794BA;
+
+.header{
+    background-image: url(../images/header/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &__logo{
+        max-width: 185px;
+    }
+    &__top{
+        padding-top: 50px;
+        margin-bottom: 74px;
+    }
+    &__top-menu{
+        display: none;
+    }
+    &__top-inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__top-list{
+        max-width: inherit;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__top-link{
+        color: $default;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    &__top-auth{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 248px;
+    }
+    &__top-log{
+        color: $default;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    &__top-reg{
+        color: $default ;//#465B95
+        padding: 5px 53px;
+        border: 1px solid #465B95;
+        border-radius: 68px;
+    }
 }
+.menu{
+    width: 352px;
+}
+
+
+
+
+
+
+
+
 @media (max-width:375px) {
     .header__top-reg {//potom nado dobavit.header__top-log
         display: none;
+    }
+    .header__top{
+        //test colors
+        background-color: $background-main;
+        color: #8794BA;
     }
     .header{
         margin-bottom: 50px;
