@@ -10,7 +10,10 @@ body{
     color: $default;
     font-style: normal;
     overflow: auto;
+    overflow-x: hidden;
     min-width: 300px;
+
+    position: relative;
 
     background-color: #F8F9FF;
 }
