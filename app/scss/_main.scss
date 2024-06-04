@@ -52,9 +52,15 @@
     margin-bottom: 120px;
     &__info{
         max-width: 480px;
+        
+    }
+    &__images{
+        margin-left: 20px;
     }
     &:nth-last-child(2) &__images{
         order: -1;
+        margin-left: 0;
+        margin-right: 20px;
     }
 }
 .advantages-title{
