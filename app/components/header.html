@@ -1,72 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-    <title>Analitycs</title>
-</head>
-<header class="header">
-    <div class="header__top">
-        <div class="container">
-            <div class="header__top-inner">
-                <div class="header__logo">
-                    <img src="images/header/logo.svg" alt="logo" class="header__logo-img">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/style.min.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <title>Analitycs</title>
+    </head>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-inner">
+                    <div class="header__logo">
+                        <svg
+                            class="header__logo-img"
+                            viewBox="0 0 270 60"
+                            width="270"
+                            height="60"
+                        >
+                            <use href="images/sprite.svg#logo-header"></use>
+                        </svg>
+                    </div>
+                    <nav class="menu">
+                        <ul class="header__top-list">
+                            <li class="header__top-item">
+                                <a href="#" class="header__top-link"
+                                    >Products</a
+                                >
+                            </li>
+                            <li class="header__top-item">
+                                <a href="#" class="header__top-link">Pricing</a>
+                            </li>
+                            <li class="header__top-item">
+                                <a href="#" class="header__top-link">FAQ</a>
+                            </li>
+                            <li class="header__top-item">
+                                <a href="#" class="header__top-link">Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- <div class="header__menu-wrapper"> -->
+                    <div class="header__top-auth">
+                        <a href="#" class="header__top-log">Sign in</a>
+                        <a href="#" class="header__top-reg">Sign Up</a>
+                    </div>
+                    <button class="header__top-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <!-- </div> -->
                 </div>
-                <nav class="menu">
-                    <ul class="header__top-list">
-                        <li class="header__top-item">
-                            <a href="#" class="header__top-link">Products</a>
-                        </li>
-                        <li class="header__top-item">
-                            <a href="#" class="header__top-link">Pricing</a>
-                        </li>
-                        <li class="header__top-item">
-                            <a href="#" class="header__top-link">FAQ</a>
-                        </li>
-                        <li class="header__top-item">
-                            <a href="#" class="header__top-link">Blog</a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- <div class="header__menu-wrapper"> -->
-                <div class="header__top-auth">
-                    <a href="#" class="header__top-log">Sign in</a>
-                    <a href="#" class="header__top-reg">Sign Up</a>
-                </div>
-                <button class="header__top-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <!-- </div> -->
-                
             </div>
         </div>
+        <section class="header__content">
+            <div class="container">
+                <div class="header__anal--mobile">
+                    <img
+                        src="images/small-frame.png"
+                        alt=""
+                        class="header__content-img--small"
+                    />
+                    <img
+                        src="images/frame.png"
+                        alt=""
+                        class="header__content-img"
+                    />
+                </div>
+                <div class="header__info">
+                    <h1 class="header__info-title">
+                        Monitor your business on real-time dashboard
+                    </h1>
+                    <p class="header__info-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Elementum nisi aliquet volutpat pellentesque volutpat
+                        est. Sapien in etiam vitae nibh nunc mattis imperdiet
+                        sed nullam.
+                    </p>
+                    <a href="#" class="header__info-btn">Try for free</a>
+                </div>
+            </div>
+        </section>
+        <div class="header__clip"></div>
+    </header>
+    <div class="header__anal--desc">
+        <img
+            src="images/small-frame.png"
+            alt=""
+            class="header__content-img--small"
+        />
+        <img src="images/frame.png" alt="" class="header__content-img" />
     </div>
-    <section class="header__content">
-        <div class="container">
-            <div class="header__anal--mobile">
-                <img src="images/header/small-frame.png" alt="" class="header__content-img--small">
-                <img src="images/header/frame.png" alt="" class="header__content-img">
-            </div>
-            <div class="header__info">
-                <h1 class="header__info-title">Monitor your business on real-time dashboard</h1>
-                <p class="header__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. </p>
-                <a href="#" class="header__info-btn">Try for free</a>
-            </div>
-        </div>
-    </section>
-    <div class="header__clip"></div>
-</header>
-<div class="header__anal--desc">
-    <img src="images/header/small-frame.png" alt="" class="header__content-img--small">
-    <img src="images/header/frame.png" alt="" class="header__content-img">
-</div>
+</html>

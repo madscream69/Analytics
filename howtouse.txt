@@ -1,0 +1,3 @@
+gulp - common start dev-serv
+gulp building - finish into dist directory
+gulp sprite - if we need to transform all svg's into sprite

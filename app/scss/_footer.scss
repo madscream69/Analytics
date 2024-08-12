@@ -1,23 +1,23 @@
-.footer{
+.footer {
     padding-top: 300px;
     padding-bottom: 103px;
     position: relative;
     background-color: $pink;
     clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
-    &__clip{
+    &__clip {
         z-index: -1;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url(../images/header/background.jpg);
+        background-image: url(../images/background.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         clip-path: polygon(0 32%, 100% 2%, 100% 100%, 0% 100%);
     }
-    &__info{
+    &__info {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -26,27 +26,27 @@
         // margin-top: 200px;
         margin-bottom: 80px;
     }
-    &__info-title{
+    &__info-title {
         font-weight: 700;
         font-size: 40px;
         line-height: 47px;
         color: #fff;
         margin-bottom: 30px;
     }
-    &__info-text{
+    &__info-text {
         font-size: 18px;
         line-height: 27px;
     }
-    &__social{
+    &__social {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-top: 63px;
         position: relative;
-        &::after{
-            content: "";
+        &::after {
+            content: '';
             position: absolute;
-            background-color: #2A407C;
+            background-color: #2a407c;
             top: 0;
             left: 0;
             right: 0;
@@ -54,76 +54,77 @@
             height: 1px;
         }
     }
-    &__social-logo{
+    &__social-logo {
         max-width: 140px;
     }
-    &__social-menu-list{
+    &__social-menu-list {
         display: flex;
         justify-content: space-between;
         width: 293px;
     }
-    &__social-menu-link{
+    &__social-menu-link {
         font-size: 14px;
         line-height: 17px;
         color: $default;
     }
-    &__social-list{
+    &__social-list {
         display: flex;
         justify-content: space-between;
         width: 135px;
     }
-    &__social-link{
+    &__social-link {
         display: block;
     }
-    &__slider{
+    &__slider {
         display: none;
     }
-    &__cards{
+    &__cards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 100px;
     }
-    &__card{
+    &__card {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        background-color: #0F1F4B;
+        background-color: #0f1f4b;
         padding: 60px 0;
         border-radius: 30px;
         text-align: center;
         width: 340px;
         height: 440px;
     }
-    &__card:nth-child(2){
+    &__card:nth-child(2) {
         background-color: #fff;
-        .footer__card-title, .footer__card-price {
+        .footer__card-title,
+        .footer__card-price {
             color: $background-main;
         }
-        .footer__card-price::after{
-            background-color: #D3D9E9;
+        .footer__card-price::after {
+            background-color: #d3d9e9;
         }
-        .footer__card-btn{
-             border: none;
-             background-color: $pink;
+        .footer__card-btn {
+            border: none;
+            background-color: $pink;
         }
     }
-    &__card-title{
+    &__card-title {
         font-size: 30px;
         line-height: 35px;
         font-weight: 700;
         color: #fff;
         margin-bottom: 10px;
     }
-    &__card-desc{
+    &__card-desc {
         font-size: 16px;
         line-height: 27px;
         color: $default;
         margin-bottom: 37px;
     }
-    &__card-price{
+    &__card-price {
         // display: block;
         // width: 100%;
         padding-top: 20px;
@@ -132,10 +133,10 @@
         font-size: 60px;
         line-height: 70px;
         position: relative;
-        &::after{
-            content: "";
+        &::after {
+            content: '';
             position: absolute;
-            background-color: #2A407C;
+            background-color: #2a407c;
             top: 0;
             left: 0;
             right: 0;
@@ -143,31 +144,28 @@
             height: 1px;
         }
     }
-    &__card-dollar{
+    &__card-dollar {
         font-size: 30px;
         line-height: 35px;
     }
-    &__card-btn{
+    &__card-btn {
         font-size: 16px;
         line-height: 19px;
         color: #fff;
-        padding: 16px 80px ;
-        border: 1px solid #2A407C; 
+        padding: 16px 80px;
+        border: 1px solid #2a407c;
         border-radius: 70px;
     }
 }
 
-
-
-@media (max-width:375px) {
-
-    .footer{
+@media (max-width: 375px) {
+    .footer {
         padding-top: 150px;
         padding-bottom: 0;
         position: relative;
         background-color: $pink;
         clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-        &__clip{
+        &__clip {
             z-index: -1;
             position: absolute;
             top: 0;
@@ -177,21 +175,21 @@
             background: $background-main;
             clip-path: polygon(0 12%, 100% 2%, 100% 100%, 0% 100%);
         }
-        &__info{
+        &__info {
             margin-bottom: 42px;
         }
-        &__info-title{
+        &__info-title {
             font-weight: 700;
             font-size: 30px;
             line-height: 35px;
             color: #fff;
             margin-bottom: 20px;
         }
-        &__info-text{
+        &__info-text {
             font-size: 14px;
             line-height: 20px;
         }
-        &__social{
+        &__social {
             padding: 45px 0;
             display: flex;
             flex-direction: row;
@@ -199,10 +197,10 @@
             flex-wrap: nowrap;
             align-items: center;
             position: relative;
-            &::after{
-                content: "";
+            &::after {
+                content: '';
                 position: absolute;
-                background-color: #2A407C;
+                background-color: #2a407c;
                 top: 0;
                 left: 0;
                 right: 0;
@@ -210,42 +208,41 @@
                 height: 1px;
             }
         }
-        &__social-menubox{
+        &__social-menubox {
             display: none;
         }
-        &__social-list{
+        &__social-list {
             width: 135px;
             display: flex;
             justify-content: space-between;
         }
-        &__social-logo{
+        &__social-logo {
             width: 138px;
             margin-right: 10px;
         }
-        &__cards{
+        &__cards {
             display: none;
         }
-        &__slider{
+        &__slider {
             display: block;
             // height: 428px;
             padding-bottom: 44px;
             width: 100%;
             text-align: center;
         }
-        &__swiper-title{
+        &__swiper-title {
             font-weight: 700;
             color: $background-main;
             font-size: 25px;
             line-height: 30px;
             margin-bottom: 7px;
         }
-        &__swiper-desc{
+        &__swiper-desc {
             font-size: 13px;
             line-height: 18px;
             padding-bottom: 30px;
-            
         }
-        &__swiper-price{
+        &__swiper-price {
             width: 220px;
             padding-top: 20px;
             font-weight: 700;
@@ -253,10 +250,10 @@
             font-size: 60px;
             line-height: 70px;
             position: relative;
-            &::after{
-                content: "";
+            &::after {
+                content: '';
                 position: absolute;
-                background-color: #D3D9E9;
+                background-color: #d3d9e9;
                 top: 0;
                 left: 0;
                 right: 0;
@@ -264,14 +261,14 @@
                 height: 1px;
             }
         }
-        &__swiper-dollar{
+        &__swiper-dollar {
             font-size: 30px;
             line-height: 35px;
         }
-        &__swiper-btn{
+        &__swiper-btn {
             display: block;
             text-align: center;
-            
+
             background-color: $pink;
             padding: 10px 80px 10px 80px;
             border-radius: 30px;
@@ -282,7 +279,7 @@
         width: 100%;
         height: 100%;
     }
-  
+
     .footer__swiper-slide.swiper-slide {
         width: 280px;
         height: 358px;
